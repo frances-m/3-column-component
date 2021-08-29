@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+@import "util/placeholders";
+@import "util/variables";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $light-gray;
+}
+
+main {
+  margin: 0 auto;
+  margin-top: 5vh;
+  width: 90%;
+}
+
+.sedans {
+  background-color: $bg-sedans;
+  border-radius: 5px 5px 0 0;
+  button {
+    color: $bg-sedans;
+  }
+}
+
+.suvs {
+  background-color: $bg-suvs;
+  button {
+    color: $bg-suvs;
+  }
+}
+
+.luxury {
+  background-color: $bg-luxury;
+  border-radius: 0 0 5px 5px;
+  button {
+    color: $bg-luxury;
+  }
+}
+
+.column-content {
+  width: 80%;
+  margin: 0 auto;
+
+  h1 {
+    @extend %big-shoulders;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  p {
+    @extend %lexend-deca;
+    color: $transparent-white;
+  }
+
+  button {
+    @extend %lexend-deca;
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+  }
+}
