@@ -6,17 +6,18 @@ body {
   margin: 0;
   padding: 0;
   background-color: $light-gray;
+  display: flex;
 }
 
 main {
   margin: 0 auto;
-  margin-top: 5vh;
+  margin-top: 23.28vw;
   width: 90%;
 }
 
 .sedans {
   background-color: $bg-sedans;
-  border-radius: 5px 5px 0 0;
+  border-radius: 8px 8px 0 0;
   button {
     color: $bg-sedans;
   }
@@ -31,31 +32,128 @@ main {
 
 .luxury {
   background-color: $bg-luxury;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 8px 8px;
   button {
     color: $bg-luxury;
   }
 }
 
 .column-content {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
+
+  img {
+    margin-top: 12.55vw;
+    height: 10.6vw;
+  }
 
   h1 {
     @extend %big-shoulders;
-    color: white;
+    font-size: 10.4vw;
+    color: $light-gray;
     text-transform: uppercase;
+    margin-bottom: 6.6vw;
   }
 
   p {
     @extend %lexend-deca;
+    font-size: 4vw;
     color: $transparent-white;
+    line-height: 6.8vw;
+    margin-bottom: 6.5vw;
   }
 
   button {
     @extend %lexend-deca;
+    font-size: 4.1vw;
     border: none;
-    background-color: white;
-    border-radius: 20px;
+    background-color: $light-gray;
+    border-radius: 10vw;
+    height: 12.6vw;
+    width: 65%;
+    margin-bottom: 13vw;
+
+    &:hover {
+      border: 2px solid $light-gray;
+      color: $light-gray;
+      background-color: inherit;
+    }
+  }
+}
+
+.attribution {
+  @extend %lexend-deca;
+  font-size: .7rem;
+  margin: 2.2vw 0;
+  text-align: center;
+  a {
+    color: $bg-luxury;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    justify-content: center;
+  }
+
+  main {
+    width: 64%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+ .column-container {
+   display: flex;
+   justify-content: center;
+   margin-top: 5.75vw;
+ }
+
+ .sedans {
+   border-radius: 6px 0 0 6px;
+ }
+
+ .luxury {
+   border-radius: 0 6px 6px 0;
+ }
+
+ .column {
+   width: 33.333%;
+ }
+
+  .column-content{
+    width: 68%;
+
+    img {
+      margin-top: 3.3vw;
+      height: 2.8vw;
+    }
+
+    h1 {
+      font-size: 2.68vw;
+      margin-bottom: 1.9vw;
+      margin-top: 2.05vw;
+    }
+
+    p {
+      font-size: 1.04vw;
+      line-height: 1.7vw;
+      margin-bottom: 5.9vw;
+    }
+
+    button {
+      font-size: 1vw;
+      border-radius: 2vw;
+      height: 3.2vw;
+      width: 70%;
+      margin-bottom: 3.4vw;
+    }
+  }
+
+  .attribution {
+    font-size: 1vw;
+    margin: 1vw 0;
   }
 }

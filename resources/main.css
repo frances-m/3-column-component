@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
-.column-content button, .column-content p {
+.attribution, .column-content button, .column-content p {
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
 }
@@ -9,24 +9,22 @@
   font-weight: 700;
 }
 
-/* Colors */
-/* Main */
-/* Secondary */
 body {
   margin: 0;
   padding: 0;
   background-color: #f2f2f2;
+  display: flex;
 }
 
 main {
   margin: 0 auto;
-  margin-top: 5vh;
+  margin-top: 23.28vw;
   width: 90%;
 }
 
 .sedans {
   background-color: #e38826;
-  border-radius: 5px 5px 0 0;
+  border-radius: 8px 8px 0 0;
 }
 .sedans button {
   color: #e38826;
@@ -41,27 +39,117 @@ main {
 
 .luxury {
   background-color: #004241;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 8px 8px;
 }
 .luxury button {
   color: #004241;
 }
 
 .column-content {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
+.column-content img {
+  margin-top: 12.55vw;
+  height: 10.6vw;
+}
 .column-content h1 {
-  color: white;
+  font-size: 10.4vw;
+  color: #f2f2f2;
   text-transform: uppercase;
+  margin-bottom: 6.6vw;
 }
 .column-content p {
+  font-size: 4vw;
   color: rgba(255, 255, 255, 0.75);
+  line-height: 6.8vw;
+  margin-bottom: 6.5vw;
 }
 .column-content button {
+  font-size: 4.1vw;
   border: none;
-  background-color: white;
-  border-radius: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10vw;
+  height: 12.6vw;
+  width: 65%;
+  margin-bottom: 13vw;
+}
+.column-content button:hover {
+  border: 2px solid #f2f2f2;
+  color: #f2f2f2;
+  background-color: inherit;
+}
+
+.attribution {
+  font-size: 0.7rem;
+  margin: 2.2vw 0;
+  text-align: center;
+}
+.attribution a {
+  color: #004241;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    justify-content: center;
+  }
+
+  main {
+    width: 64%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .column-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5.75vw;
+  }
+
+  .sedans {
+    border-radius: 6px 0 0 6px;
+  }
+
+  .luxury {
+    border-radius: 0 6px 6px 0;
+  }
+
+  .column {
+    width: 33.333%;
+  }
+
+  .column-content {
+    width: 68%;
+  }
+  .column-content img {
+    margin-top: 3.3vw;
+    height: 2.8vw;
+  }
+  .column-content h1 {
+    font-size: 2.68vw;
+    margin-bottom: 1.9vw;
+    margin-top: 2.05vw;
+  }
+  .column-content p {
+    font-size: 1.04vw;
+    line-height: 1.7vw;
+    margin-bottom: 5.9vw;
+  }
+  .column-content button {
+    font-size: 1vw;
+    border-radius: 2vw;
+    height: 3.2vw;
+    width: 70%;
+    margin-bottom: 3.4vw;
+  }
+
+  .attribution {
+    font-size: 1vw;
+    margin: 1vw 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
